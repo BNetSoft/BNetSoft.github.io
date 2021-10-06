@@ -1,0 +1,14 @@
+{
+    "appName": "Farm Runs Organizer",
+    "description": "Allows you to organize your farm runs according to your level",
+    "appUrl": "https://bekson.github.io/alt1-organizer/",
+    "configUrl": "https://bekson.github.io/alt1-organizer/appconfig.json",
+    "iconUrl": "https://bekson.github.io/alt1-organizer/app_icon.png",
+    "defaultWidth": 400,
+    "defaultHeight": 200,
+    "minWidth": 250,
+    "minHeight": 100,
+    "requestHandlers": [],
+    "activators": [],
+    "permissions": "overlay,pixel,gamestate"
+}
