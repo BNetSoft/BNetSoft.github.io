@@ -11,7 +11,10 @@ var minimap = null;
 
 var minimapRefreshInterval = 5000;
 var playerFinderInterval = 1000;
-
+function colorMix(r, g, b, a)
+{
+    return a1lib.mixcolor(r, g, b, a);
+}
 var Status = {
     STARTING: {
         id: "STARTING",
