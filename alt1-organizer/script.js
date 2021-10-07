@@ -98,7 +98,9 @@ function findPlayers(minimapRegion) {
     if (!minimap) {
         return 0;
     }
-    return a1lib.findsubimg(minimapRegion, playerDot).length;
+    var res =  a1lib.findsubimg(minimapRegion, playerDot);
+    alt1.overLayLine(colorMix(255, 0, 0, 255), 5, res[0].x, res[0].y, res[0].x+100, res[0].y+100, 1000);
+    return res.length;
 }
 
 function findMinimap() {
