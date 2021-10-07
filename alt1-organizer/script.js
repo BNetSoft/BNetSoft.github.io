@@ -105,8 +105,8 @@ function findPlayers(minimapRegion) {
     for(let i = 0; i <res.length; i++){ 
         let posx = minimap.x + res[i].x;
         let posy =  minimap.y +res[i].y;
-        alt1.overLayLine(a1lib.mixcolor(255, 0, 0, 255), 5, posx-2, posy-2, posx+2, posy+2, 100);
-        alt1.overLayLine(a1lib.mixcolor(0, 255, 0, 255), 5, posx+2, posy-2, posx-2, posy+2, 100);
+        alt1.overLayLine(a1lib.mixcolor(255, 0, 0, 255), 2, posx-3, posy-3, posx+3, posy+3, 1000);
+        alt1.overLayLine(a1lib.mixcolor(0, 255, 0, 255), 2, posx+3, posy-3, posx-3, posy+3, 1000);
     }
     return res.length;
 }
