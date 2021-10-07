@@ -102,7 +102,10 @@ function findPlayers(minimapRegion) {
         return 0;
     }
     var res =  a1lib.findsubimg(minimapRegion, playerDot);
-    alt1.overLayLine(a1lib.mixcolor(255, 0, 0, 255), 5, res[0].x, res[0].y, res[0].x+100, res[0].y+100, 1000);
+    for(let i = 0; i <res.length; i++){ 
+        alt1.overLayLine(a1lib.mixcolor(255, 0, 0, 255), 5, res[i].x, res[i].y, res[i].x+10, res[i].y+10, 1000);
+        alt1.overLayLine(a1lib.mixcolor(255, 0, 0, 255), 5, res[i].x, res[i].y, res[i].x-10, res[i].y-10, 1000);
+    }
     return res.length;
 }
 
