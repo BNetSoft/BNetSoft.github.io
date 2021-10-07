@@ -9,8 +9,8 @@ ImageData.fromBase64(function (result) {
 var minimapReader = new MinimapReader();
 var minimap = null;
 
-var minimapRefreshInterval = 5000;
-var playerFinderInterval = 1000;
+var minimapRefreshInterval = 500;
+var playerFinderInterval = 200;
 function colorMix(r, g, b, a)
 {
     return a1lib.mixcolor(r, g, b, a);
@@ -113,4 +113,4 @@ function findPlayers(minimapRegion) {
 
 function findMinimap() {
     minimap = minimapReader.find();
-}
+}a
