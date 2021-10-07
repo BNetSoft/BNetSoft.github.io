@@ -113,4 +113,4 @@ function findPlayers(minimapRegion) {
 
 function findMinimap() {
     minimap = minimapReader.find();
-}a
+}
