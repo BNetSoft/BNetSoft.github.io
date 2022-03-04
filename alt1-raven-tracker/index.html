@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: * 'unsafe-eval' 'unsafe-inline'; media-src *">
+    <title>Raven Tracker - Get Ravensworn Title as quickly as possible!</title>
     <link rel="stylesheet" type="text/css" href="https://runeapps.org/nis/nis.css" />
+    <link rel="stylesheet" type="text/css" href="https://runeapps.org/nis/alt1-currentskin/skinstyle.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <script type="text/javascript" src="https://runeapps.org/alt1lib.js"></script>
-    <script type="text/javascript" src="https://runeapps.org/imagedetect.js"></script>
-    <script type="text/javascript" src="https://runeapps.org/imagelibs/minimap.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    
 </head>
-<body class="nis" onload="start();">
-    <div id="container">        
-        <div class="text-container">
-            <h1 id="status">Starting up...</h1>
-        </div>
-        <div id="state-button" class="nisbutton" onclick="changeState();">Start</div>
+<body class="nis" onload="getLastRavenLocation();refreshResult();">
+    
+    <div id="container" >   
+        <h1 class="nistext">Raven Tracker and Reminder.</h1>
+        <div class="nistext">This extension will prompt you when the Raven spawns in Prifddinas, pointing exact location and photo.</div>
+        <div class="nistext">Tracker is fully automated. It will take genuine user reports and publish then to wider public.</div>
+        <hr> 
+        
+        <div id="refreshbutton" class="nisbutton2" onclick="refreshResult();">Manual Refresh</div>   
+        <br>
+        <div class="result-container">
+            <img id="statusImage" src="" alt ="" >
+            <div id="status" class ="nistext">Work in progress</div>
+            
+        </div><br style="clear:both">
+       
+        <div id="result">asdasd</div>
+        
+        <br>
+        <div id="voting"></div>
+        <br>
+        <hr>
+        <div id="footer"><h3>You can show your support by <a class="nislink" href ="https://www.buymeacoffee.com/bekson">Buying me a Coffee</a>, or via <a href="https://www.paypal.com/donate/?hosted_button_id=86FQAMSBA334E">Paypal</a>.</h3></div>
+        
+        
     </div>
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

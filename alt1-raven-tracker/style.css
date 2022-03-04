@@ -1,42 +1,52 @@
-body, html {
-    height: 100%;
-}
-
-#container {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    color: black;
-}
-
-#container.paused {
-    background-color: #E87E04;
-}
-
-#container.alert {
-    background-color: red;
-}
-
-#container.ok {
-    background-color: green;
-}
-
 .text-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 40px;
     padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-#state-button {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+#refreshbutton{
+    width: 120px;
+}
+.container{
+    display:flex;
+}
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 1px;
+  background-color: #41555F;
+  border: none;
+}
+#result{
+    display:none;
+    font-size: 14px;
+}
+li{
+    margin-bottom: 5px;
+}
+.result-container #statusImage{
+    width: 50%;
+    height: 50%;
+    float:left;
+    display: none;
+    
+}
+.result-container{
+    width: 90%;
+    border: 4px solid gray;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    display:none;
+   
+}
+.result-container #status{
+    
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    
+  
+}
+.nisdropdown{
+    font-size: 16px;
 }
