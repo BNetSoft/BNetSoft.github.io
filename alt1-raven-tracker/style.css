@@ -1,3 +1,4 @@
+
 .text-container {
     padding: 10px;
 }
@@ -5,7 +6,8 @@
     width: 120px;
 }
 .container{
-    display:flex;
+  
+    left: 20px;
 }
 hr{
   margin-top: 20px;

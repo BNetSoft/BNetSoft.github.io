@@ -233,6 +233,7 @@ function refreshResult() {
   var nextSpawn = closestSpawn();
   var dates = generateDatesFromNow(5);
   var lastSpawn = diff(Math.floor(Date.now() / 1000), closestSpawn() - 1123200)
+  if(!isTodayRavenSpawn()){
   var res = "Raven last spawned " + lastSpawn + " ago.<br>Next spawn dates: <br><ul>";
 
   for (let x = 0; x < dates.length; x++) {
@@ -240,6 +241,7 @@ function refreshResult() {
     //console.log(unixToDate(dates[x]));
     //   console.log(diff( dates[x], Math.floor(Date.now()/1000)))
   }
+}
 
   res += "</ul>";
   resultEl.innerHTML = res;
