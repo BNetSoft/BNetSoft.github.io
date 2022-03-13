@@ -1,4 +1,6 @@
-
+body.nis {
+    overflow: auto;
+}
 .text-container {
     padding: 10px;
 }
@@ -51,4 +53,7 @@ li{
 }
 .nisdropdown{
     font-size: 16px;
+}
+#districtList{
+    max-width: 345px;
 }
