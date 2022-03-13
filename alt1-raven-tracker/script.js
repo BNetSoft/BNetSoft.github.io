@@ -241,10 +241,11 @@ function refreshResult() {
       //console.log(unixToDate(dates[x]));
       //   console.log(diff( dates[x], Math.floor(Date.now()/1000)))
     }
+    res += "</ul>";
+    resultEl.innerHTML = res;
   }
 
-  res += "</ul>";
-  resultEl.innerHTML = res;
+ 
   // console.log(lastSpawn);
   setTimeout(function () {
     if (isTodayRavenSpawn()) {
