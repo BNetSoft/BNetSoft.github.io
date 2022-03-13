@@ -76,7 +76,7 @@ async function getRaven() {
 }
 var serverData = "";
 function getLastRavenLocation() {
-  serverData = fetchFromServer('http://132.145.58.153/votes');
+  serverData = fetchFromServer('https://raventracker.sytes.net/votes');
   document.getElementById("status").innerText = "Raven Seen at";
 }
 
@@ -109,7 +109,7 @@ function fetchFromServer(url) {
 }
 function postVoteToServer(w, l){
   const invocation = new XMLHttpRequest();
-  var url = "http://132.145.58.153/vote/w"+w+"/"+l
+  var url = "https://raventracker.sytes.net/vote/w"+w+"/"+l
   var ret = "";
   if (invocation) {
     invocation.open('GET', url, true);
