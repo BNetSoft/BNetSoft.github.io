@@ -259,4 +259,4 @@ function refreshResult() {
 
   //console.log(calculateNewDate(new Date(2022,1,28,0)).toString());
 }
-document.getElementById("appHeader").innerHTML = "Raven Tracker v1.1"
+document.getElementById("appHeader").innerHTML = "Raven Tracker v1.12"
